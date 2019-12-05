@@ -5,18 +5,12 @@
         <span>minuro's portfolio</span>
       </v-toolbar-title>
       <v-spacer></v-spacer>
-      <router-link :to="{ name: 'home' }">
-        Home
-      </router-link>
-      <router-link :to="{ name: 'about' }">
-        About
-      </router-link>
-      <router-link :to="{ name: 'work' }">
-        Work
-      </router-link>
-      <router-link :to="{ name: 'link' }">
-        Link
-      </router-link>
+        <LinkButton class="mr-2"
+        v-for="(btn, index) in buttons" 
+        :key="index"
+        :link="btn.link"
+        :name="btn.name"
+        />
     </v-toolbar>
     <v-content>
       <router-view/>
@@ -25,12 +19,34 @@
 </template>
 
 <script>
+import LinkButton from './components/LinkButton'
+
 export default {
   name: 'App',
   data () {
     return {
-      //
+      buttons: [
+        {
+          link: 'home',
+          name: 'Home'
+        },
+        {
+          link: 'about',
+          name: 'About'
+        },
+        {
+          link: 'work',
+          name: 'Work'
+        },
+        {
+          link: 'link',
+          name: 'Link'
+        }
+      ]
     }
+  },
+  components:{
+    LinkButton
   }
 }
 </script>
