@@ -52,46 +52,12 @@
 </template>
 
 <script>
+import skills from '../assets/skills.json'
+
 export default {
   data(){
     return {
-      items: [
-        {
-          title: 'HTML',
-          body: '勉強中',
-          history: '1年未満'
-        },
-        {
-          title: 'CSS',
-          body: '勉強中',
-          history: '1年未満'
-        },
-        {
-          title: 'javascript',
-          body: '勉強中',
-          history: '1年未満'
-        },
-        {
-          title: 'Vue.js',
-          body: '勉強中',
-          history: 'なし'
-        },
-        {
-          title: 'Ruby',
-          body: '勉強中',
-          history: 'なし'
-        },
-        {
-          title: 'Ruby on Rails',
-          body: '勉強中',
-          history: 'なし'
-        },
-        {
-          title: 'C#',
-          body: '実務で使用',
-          history: '2年半'
-        }
-      ],
+    items: skills,
     profile: 
     ` システムエンジニアをしています。
     業務では主にC#を使用して業務アプリケーションを開発・保守をしています。
