@@ -1,6 +1,6 @@
 <template>
   <v-app>
-    <v-toolbar app>
+    <v-toolbar app min-height="70px" max-height="70px">
       <v-toolbar-title class="headline">
         <span>minuro's portfolio</span>
       </v-toolbar-title>

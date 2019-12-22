@@ -1,5 +1,5 @@
 <template>
-  <v-container text-center style="height:80vh;">
+  <v-container text-center>
     <v-layout row wrap justify-center>
       <v-flex xs12>
         <h1>Link</h1>

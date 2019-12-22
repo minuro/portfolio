@@ -1,6 +1,6 @@
 <template> 
   <router-link :to="{ name: link }">
-    <v-btn color="info" flat min-width="80px">
+    <v-btn color="info" min-width="80px" flat>
       {{name}}
     </v-btn>
   </router-link>
