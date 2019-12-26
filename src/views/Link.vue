@@ -10,16 +10,16 @@
           <v-card-text>
             <v-list two-line>
               <template v-for="(link, index) in links">
-                <v-list-tile :key="link.title">
-                  <v-list-tile-content>
-                    <v-list-tile-title @click="PageLink(link.address)">
+                <v-list-item :key="index" :href="link.address" target="_blank">
+                  <v-list-item-content>
+                    <v-list-item-title>
                       <h2>
                         {{ link.title }}
                       </h2>
-                    </v-list-tile-title>
-                  </v-list-tile-content>
-                </v-list-tile>
-                <v-divider class="my-3"
+                    </v-list-item-title>
+                  </v-list-item-content>
+                </v-list-item>
+                <v-divider
                   v-if="index + 1 < links.length"
                   :key="index"
                 ></v-divider>
@@ -51,11 +51,6 @@ export default {
         }
       ]
     }
-  },
-  methods: {
-      PageLink(address){
-        window.open(address, '_blank'); 
-      }
   }
 }
 </script>

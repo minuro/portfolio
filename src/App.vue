@@ -1,6 +1,6 @@
 <template>
   <v-app>
-    <v-toolbar app min-height="70px" max-height="70px">
+    <v-app-bar app>
       <v-toolbar-title class="headline">
         <span>minuro's portfolio</span>
       </v-toolbar-title>
@@ -11,7 +11,7 @@
         :link="btn.link"
         :name="btn.name"
         />
-    </v-toolbar>
+    </v-app-bar>
     <v-content>
       <router-view/>
     </v-content>
