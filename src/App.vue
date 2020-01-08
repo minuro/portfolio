@@ -23,6 +23,7 @@
 <script>
 import LinkButton from './components/LinkButton'
 import SideMenu from './components/SideMenu'
+import buttons from './assets/buttons.json'
 import { mapActions } from 'vuex'
 
 export default {
@@ -30,24 +31,7 @@ export default {
   data () {
     return {
       right: true,
-      buttons: [
-        {
-          link: 'home',
-          name: 'Home'
-        },
-        {
-          link: 'about',
-          name: 'About'
-        },
-        {
-          link: 'work',
-          name: 'Work'
-        },
-        {
-          link: 'link',
-          name: 'Link'
-        }
-      ]
+      buttons: buttons
     }
   },
   components:{
