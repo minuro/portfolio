@@ -11,31 +11,9 @@
       :link="btn.link"
       :name="btn.name"
       />
-      <v-app-bar-nav-icon class="hidden-md-and-up" @click="drawer=!drawer"/>
+      <v-app-bar-nav-icon class="hidden-md-and-up" @click="toggleSideMenu"/>
     </v-app-bar>
-    <v-navigation-drawer
-      v-show="drawer"
-      v-model="drawer"
-      :right="right"
-      absolute
-      temporary
-    >
-      <v-list>
-        <template v-for="(btn, index) in buttons">
-          <v-list-item :key="btn.name" :to="{name: btn.link}">
-            <v-list-item-content>
-              <v-list-item-title>
-                {{btn.name}}
-              </v-list-item-title>
-            </v-list-item-content>
-          </v-list-item>
-          <v-divider
-            v-if="index + 1 < buttons.length"
-            :key="index"
-          ></v-divider>
-        </template>
-      </v-list>
-    </v-navigation-drawer>
+    <SideMenu :right="right" :buttons="buttons" />
     <v-content>
       <router-view/>
     </v-content>
@@ -44,12 +22,13 @@
 
 <script>
 import LinkButton from './components/LinkButton'
+import SideMenu from './components/SideMenu'
+import { mapActions } from 'vuex'
 
 export default {
   name: 'App',
   data () {
     return {
-      drawer: false,
       right: true,
       buttons: [
         {
@@ -72,7 +51,11 @@ export default {
     }
   },
   components:{
-    LinkButton
+    LinkButton,
+    SideMenu
+  },
+  methods: {
+    ...mapActions(['toggleSideMenu'])
   }
 }
 </script>
