@@ -5,13 +5,15 @@
         <span>minuro's portfolio</span>
       </v-toolbar-title>
       <v-spacer></v-spacer>
-        <LinkButton class="mr-2"
-        v-for="(btn, index) in buttons" 
-        :key="index"
-        :link="btn.link"
-        :name="btn.name"
-        />
+      <LinkButton class="mr-2 hidden-sm-and-down"
+      v-for="(btn, index) in buttons" 
+      :key="index"
+      :link="btn.link"
+      :name="btn.name"
+      />
+      <v-app-bar-nav-icon class="hidden-md-and-up" @click="toggleSideMenu"/>
     </v-app-bar>
+    <SideMenu :right="right" :buttons="buttons" />
     <v-content>
       <router-view/>
     </v-content>
@@ -20,33 +22,24 @@
 
 <script>
 import LinkButton from './components/LinkButton'
+import SideMenu from './components/SideMenu'
+import buttons from './assets/buttons.json'
+import { mapActions } from 'vuex'
 
 export default {
   name: 'App',
   data () {
     return {
-      buttons: [
-        {
-          link: 'home',
-          name: 'Home'
-        },
-        {
-          link: 'about',
-          name: 'About'
-        },
-        {
-          link: 'work',
-          name: 'Work'
-        },
-        {
-          link: 'link',
-          name: 'Link'
-        }
-      ]
+      right: true,
+      buttons: buttons
     }
   },
   components:{
-    LinkButton
+    LinkButton,
+    SideMenu
+  },
+  methods: {
+    ...mapActions(['toggleSideMenu'])
   }
 }
 </script>

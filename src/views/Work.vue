@@ -4,7 +4,7 @@
       <v-flex xs12>
         <h1>Work</h1>
       </v-flex>
-      <v-flex xs12 mt-2>
+      <v-flex xs10 mt-2>
         <v-card class="pa-3">
           <h3>--- 開発中 ---</h3>
         </v-card>

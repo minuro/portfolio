@@ -31,11 +31,11 @@
                   <v-list-item-content>
                     <v-list-item-title>{{ item.title }}</v-list-item-title>
                     <br>
-                    <v-list-item-sub-title>
+                    <v-list-item-subtitle>
                       {{ item.body }}
                       <br/>
                       実務歴：{{ item.history }}
-                    </v-list-item-sub-title>
+                    </v-list-item-subtitle>
                   </v-list-item-content>
                 </v-list-item>
                 <v-divider
