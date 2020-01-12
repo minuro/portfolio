@@ -1,1 +1,16 @@
-[]
+[
+    {
+        "name": "number-game",
+        "image": "number-game.png",
+        "text": "",
+        "url": "https://number-game-3b7b4.firebaseapp.com/",
+        "githubURL": "https://github.com/minuro/number-game"
+    },
+    {
+        "name": "simple-chat",
+        "image": "simple-chat.png",
+        "text": "",
+        "url": "https://simple-chat-ba64b.firebaseapp.com/",
+        "githubURL": "https://github.com/minuro/simple-chat"
+    }
+]
