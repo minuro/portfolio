@@ -2,14 +2,26 @@
     {
         "name": "number-game",
         "image": "number-game.png",
-        "text": "",
+        "text": "マスターマインドというゲームの１人用版です。",
+        "text2": "Vue.jsのコンポーネントを理解するために作成しました。",
+        "text3": "",
+        "skills" :[
+            {"name": "Vue.js"},
+            {"name": "firebase"}
+        ],
         "url": "https://number-game-3b7b4.firebaseapp.com/",
         "githubURL": "https://github.com/minuro/number-game"
     },
     {
         "name": "simple-chat",
         "image": "simple-chat.png",
-        "text": "",
+        "text": "シンプルなチャットシステムです。",
+        "text2": "firebaseとの連携を理解するために作成しました。",
+        "text3": "※現在は投稿できなくしています",
+        "skills" :[
+            {"name": "Vue.js"},
+            {"name": "firebase"}
+        ],
         "url": "https://simple-chat-ba64b.firebaseapp.com/",
         "githubURL": "https://github.com/minuro/simple-chat"
     }
