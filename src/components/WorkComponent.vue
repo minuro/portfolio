@@ -20,12 +20,12 @@
         {{skill.name}}
       </div>
       <v-divider/>
-      <h2 class="mt-2">
+      <h2 class="mt-2" v-if="work.url">
         <a :href="work.url" target="_blank">
           <v-btn rounded color="success" min-width="120px">リンク</v-btn>
         </a>
       </h2>
-      <h2 class="mt-2">
+      <h2 class="mt-2" v-if="work.githubURL">
         <a :href="work.githubURL" target="_blank">
           <v-btn rounded color="success" min-width="120px">github</v-btn>
         </a>
