@@ -24,5 +24,30 @@
         ],
         "url": "https://simple-chat-ba64b.firebaseapp.com/",
         "githubURL": "https://github.com/minuro/simple-chat"
+    },
+    {
+        "name": "vue_sample",
+        "image": "vue-sample.png",
+        "text": "Udemyの講座で作成したアプリケーションです。",
+        "text2": "firebaseでの認証機能を使用しました。",
+        "text3": "",
+        "skills" :[
+            {"name": "Vue.js"},
+            {"name": "firebase"}
+        ],
+        "url": "https://my-address-pj-82420.firebaseapp.com/",
+        "githubURL": "https://github.com/minuro/vue-sample"
+    },
+    {
+        "name": "rails_sample",
+        "image": "rails-sample.png",
+        "text": "Udemyの講座で作成したアプリケーションです。",
+        "text2": "Railsを使用しています。",
+        "text3": "",
+        "skills" :[
+            {"name": "Rails"}
+        ],
+        "url": "",
+        "githubURL": "https://github.com/minuro/rails_sample"
     }
 ]
