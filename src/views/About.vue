@@ -11,7 +11,7 @@
             <h1>Profile</h1>
           </v-card-title>
           <v-card-text class="text-left">
-              <h2 class="mb-2">Name：みの</h2>
+              <h2 class="mb-2">Name：minuro</h2>
               <div style="white-space:pre-wrap;">
                 {{profile}}
               </div>
@@ -60,8 +60,8 @@ export default {
     items: skills,
     profile: 
     ` システムエンジニアをしています。
-    業務では主にC#を使用して業務アプリケーションを開発・保守をしています。
-    現在は、Web系の技術に興味を持ち勉強中です`
+    業務では主にC#を使用して業務アプリケーションの開発・保守をしています。
+    現在は、Web系の技術に興味を持ち勉強中です。`
     }
   }
 }
